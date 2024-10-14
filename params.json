@@ -1,0 +1,81 @@
+{
+	"pattrstorage" : 	{
+		"name" : "params",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"envLength" : [ 3 ],
+					"live.dial" : [ 0.243858267716535 ],
+					"live.dial[1]" : [ 0.306220472440945 ],
+					"live.dial[2]" : [ 0.173700787401575 ],
+					"live.gain~" : [ 0.0 ],
+					"vst~" : [ 						{
+							"filetype" : "C74Snapshot",
+							"version" : 2,
+							"minorversion" : 0,
+							"name" : "ValhallaVintageVerb",
+							"origin" : "ValhallaVintageVerb.vst3info",
+							"type" : "VST3",
+							"subtype" : "AudioEffect",
+							"embed" : 1,
+							"snapshot" : 							{
+								"pluginname" : "ValhallaVintageVerb.vst3info",
+								"plugindisplayname" : "ValhallaVintageVerb",
+								"pluginsavedname" : "C74_VST3:/ValhallaVintageVerb",
+								"pluginsaveduniqueid" : 608255483,
+								"version" : 1,
+								"isbank" : 0,
+								"isbase64" : 1,
+								"sliderorder" : [  ],
+								"slidervisibility" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
+								"blob" : "1146.VMjLgDGA...O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9byM03hUMczXWEjKt3hYt3hKt.kKt3hKt3BS5gEcyQjKtfjc1XTR5AkaA4hKtfjYisVUwvjKP4hKE4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKBI1ZUMTRSgjTH4hKtXWdOMCLFElYXcUV30zUZUGMV8DZDk1R1gjPHsFMwfUcQYkVzMlUOgFUEUkQvHjSncSZOYlcoU0Y2YjVmcmQgcVVUoEcQcEVsUEaUsVRsgkYtbTXvLlUZQWVUkEdMckV0QiUOgFTosjcyHUSn4hPhgWUwH1ZQ01TmAiUYgCRBE0ZYYEVvbmQiglKRM0amc0Sn4RZKYGUo0TdpkVS5Y1PMkmXS0DZtHDU3UkQQs1cVgEMvjFR1MCZLACRBgDQUECVms1UOglKosjdPMjS14xPLYGQ4wzLHMjS3IVdMECRBgzTqwFYqASZHc2LBwDZtHET5E0UXk1bV8DZtj1RvfjPHITQwHVdvP0XxE0UOglKosTLHkGS1wzPNICVC4jLXMjS4QzPLACRBgjPEEiX4cFLgESUrIFNHIDSzwzPNcmKo0jdpMUS2A0TLQiY4wjcLkFRlYFUZ01YwPkaUYTXrASZHY2LBwDZtHjTuMlQZYTRWk0cvjFR1MiTMglKRE0YIcTXzDEUZwVVVMVdqESXzASZHc2LBwDZtHzTmE0UYQzZrkEaUIiXugCaggCRRwDctjFRlomdgoVRUgkdUY0Sn4RZKgGTS0jdTMTSvf0PMEiZCwDLlMkSzfjPH0DNFkEQUYjX5clUOglKosTdhMkSzn1TNQiZS0DdLMESwfzPNoGRBgDRqESVt0DUioGLogjcyHUSz3xTMkmYC4DLpkGSwHVdLIiKo0DZtHzT0MlLPASTW8DZtj1R1gjPHMDNFEVcIc0T0EkUYgCRBwDcLkGS4wTdLkGSC0TdHkVSx.0PMYmYogjYHUUVwTEahgFL5ElZUY0Sn4RZKoGQo0TLXkVSwPUZMICSowDLTMkS3gjPHM2ZFQFS3DCVwASZHYGRBgDLqESUuEkQi4FLogDMLMUSn4hTi81YTk0aiYjV5ASZHoGSS0DZ2f1St3hKt3hKt3hKt3hKJUELPUTPqI1aYcEV5UkQQcVTWgkKDAkKBs1QhcVSxHlKDAkKC4BTG4hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAwyKIMzasA2atUlaz4COuX0TTMCTrU2Yo41TzEFck4C."
+							}
+
+						}
+ ]
+				}
+
+			}
+,
+			"2" : 			{
+				"id" : 2,
+				"data" : 				{
+					"envLength" : [ 62 ],
+					"live.dial" : [ 0.243858267716535 ],
+					"live.dial[1]" : [ 0.306220472440945 ],
+					"live.dial[2]" : [ 0.173700787401575 ],
+					"live.gain~" : [ 0.0 ],
+					"vst~" : [ 						{
+							"filetype" : "C74Snapshot",
+							"version" : 2,
+							"minorversion" : 0,
+							"name" : "ValhallaVintageVerb",
+							"origin" : "ValhallaVintageVerb.vst3info",
+							"type" : "VST3",
+							"subtype" : "AudioEffect",
+							"embed" : 1,
+							"snapshot" : 							{
+								"pluginname" : "ValhallaVintageVerb.vst3info",
+								"plugindisplayname" : "ValhallaVintageVerb",
+								"pluginsavedname" : "C74_VST3:/ValhallaVintageVerb",
+								"pluginsaveduniqueid" : 608255483,
+								"version" : 1,
+								"isbank" : 0,
+								"isbase64" : 1,
+								"sliderorder" : [  ],
+								"slidervisibility" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
+								"blob" : "1146.VMjLgDGA...O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9byM03hUMczXWEjKt3hYt3hKt.kKt3hKt3BS5gEcyQjKtfjc1XTR5AkaA4hKtfjYisVUwvjKP4hKE4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKBI1ZUMTRSgjTH4hKtXWdOMCLFElYXcUV30zUZUGMV8DZDk1R1gjPHsFMwfUcQYkVzMlUOgFUEUkQvHjSncSZOYlcoU0Y2YjVmcmQgcVVUoEcQcEVsUEaUsVRsgkYtbTXvLlUZQWVUkEdMckV0QiUOgFTosjcyHUSn4hPhgWUwH1ZQ01TmAiUYgCRBE0ZYYEVvbmQiglKRM0amc0Sn4RZKYGUo0TdpkVS5Y1PMkmXS0DZtHDU3UkQQs1cVgEMvjFR1MCZLACRBgDQUECVms1UOglKosjdPMjS14xPLYGQ4wzLHMjS3IVdMECRBgzTqwFYqASZHc2LBwDZtHET5E0UXk1bV8DZtj1RvfjPHITQwHVdvP0XxE0UOglKosTLHkGS1wzPNICVC4jLXMjS4QzPLACRBgjPEEiX4cFLgESUrIFNHIDSzwzPNcmKo0jdpMUS2A0TLQiY4wjcLkFRlYFUZ01YwPkaUYTXrASZHY2LBwDZtHjTuMlQZYTRWk0cvjFR1MiTMglKRE0YIcTXzDEUZwVVVMVdqESXzASZHc2LBwDZtHzTmE0UYQzZrkEaUIiXugCaggCRRwDctjFRlomdgoVRUgkdUY0Sn4RZKgGTS0jdTMTSvf0PMEiZCwDLlMkSzfjPH0DNFkEQUYjX5clUOglKosTdhMkSzn1TNQiZS0DdLMESwfzPNoGRBgDRqESVt0DUioGLogjcyHUSz3xTMkmYC4DLpkGSwHVdLIiKo0DZtHzT0MlLPASTW8DZtj1R1gjPHMDNFEVcIc0T0EkUYgCRBwDcLkGS4wTdLkGSC0TdHkVSx.0PMYmYogjYHUUVwTEahgFL5ElZUY0Sn4RZKoGQo0TLXkVSwPUZMICSowDLTMkS3gjPHM2ZFQFS3DCVwASZHYGRBgDLqESUuEkQi4FLogDMLMUSn4hTi81YTk0aiYjV5ASZHoGSS0DZ2f1St3hKt3hKt3hKt3hKJUELPUTPqI1aYcEV5UkQQcVTWgkKDAkKBs1QhcVSxHlKDAkKC4BTG4hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAwyKIMzasA2atUlaz4COuX0TTMCTrU2Yo41TzEFck4C."
+							}
+
+						}
+ ]
+				}
+
+			}
+
+		}
+
+	}
+
+}

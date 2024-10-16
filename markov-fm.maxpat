@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 186.0, 162.0, 1181.0, 744.0 ],
+		"rect" : [ 337.0, 199.0, 1179.0, 744.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,111 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-20",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 884.0, 189.0, 47.0, 22.0 ],
+					"text" : "recall 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-21",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 884.0, 158.0, 63.0, 22.0 ],
+					"text" : "route read"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-19",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 974.0, 80.0, 54.0, 22.0 ],
+					"text" : "recall $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-18",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 974.0, 44.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 882.5, 80.0, 52.0, 22.0 ],
+					"text" : "store $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 882.5, 44.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1067.0, 58.0, 89.0, 22.0 ],
+					"text" : "storagewindow"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 884.0, 125.0, 213.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"client_rect" : [ 100, 172, 483, 534 ],
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0,
+						"storage_rect" : [ 410, 284, 975, 877 ]
+					}
+,
+					"text" : "pattrstorage markov-fm @savemode 2",
+					"varname" : "markov-fm"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"bgmode" : 0,
 					"border" : 0,
@@ -3323,32 +3428,13 @@
 									"presentation_rect" : [ 327.0, 9.0, 100.0, 40.0 ],
 									"preset_data" : [ 										{
 											"number" : 1,
-											"data" : [ 256, "obj-8", "matrixctrl", "list", 0, 0, 1.0, 0, 1, 1.0, 0, 2, 0.0, 0, 3, 0.0, 0, 4, 0.0, 0, 5, 0.0, 0, 6, 0.0, 0, 7, 0.0, 0, 8, 0.0, 0, 9, 0.0, 0, 10, 0.0, 0, 11, 0.0, 0, 12, 0.0, 0, 13, 0.0, 0, 14, 0.0, 0, 15, 0.0, 1, 0, 1.0, 1, 1, 0.0, 1, 2, 1.0, 1, 3, 0.0, 1, 4, 0.0, 1, 5, 0.0, 1, 6, 0.0, 1, 7, 0.0, 1, 8, 0.0, 1, 9, 0.0, 1, 10, 0.0, 1, 11, 0.0, 1, 12, 0.0, 1, 13, 0.0, 1, 14, 0.0, 1, 15, 0.0, 2, 0, 0.0, 2, 1, 1.0, 2, 2, 1.0, 2, 3, 0.0, 2, 4, 0.0, 2, 5, 0.0, 2, 6, 0.0, 2, 7, 0.0, 2, 8, 0.0, 2, 9, 0.0, 2, 10, 0.0, 2, 11, 0.0, 2, 12, 0.0, 2, 13, 0.0, 2, 14, 0.0, 2, 15, 0.0, 3, 0, 0.0, 3, 1, 0.0, 3, 2, 0.0, 3, 3, 0.0, 3, 4, 1.0, 3, 5, 0.0, 3, 6, 0.0, 3, 7, 0.0, 3, 8, 0.0, 3, 9, 0.0, 3, 10, 0.0, 3, 11, 0.0, 3, 12, 0.0, 3, 13, 0.0, 3, 14, 0.0, 3, 15, 0.0, 4, 0, 0.0, 4, 1, 0.0, 4, 2, 0.0, 4, 3, 0.0, 4, 4, 0.0, 4, 5, 1.0, 4, 6, 0.0, 4, 7, 0.0, 4, 8, 0.0, 4, 9, 0.0, 4, 10, 0.0, 4, 11, 0.0, 4, 12, 0.0, 4, 13, 0.0, 4, 14, 0.0, 4, 15, 0.0, 5, 0, 0.0, 5, 1, 0.0, 5, 2, 0.0, 5, 3, 0.0, 256, "obj-8", "matrixctrl", "list", 5, 4, 0.0, 5, 5, 0.0, 5, 6, 1.0, 5, 7, 0.0, 5, 8, 0.0, 5, 9, 0.0, 5, 10, 0.0, 5, 11, 0.0, 5, 12, 0.0, 5, 13, 0.0, 5, 14, 0.0, 5, 15, 0.0, 6, 0, 0.0, 6, 1, 0.0, 6, 2, 0.0, 6, 3, 0.0, 6, 4, 0.0, 6, 5, 0.0, 6, 6, 0.0, 6, 7, 1.0, 6, 8, 0.0, 6, 9, 0.0, 6, 10, 0.0, 6, 11, 0.0, 6, 12, 0.0, 6, 13, 0.0, 6, 14, 0.0, 6, 15, 0.0, 7, 0, 0.0, 7, 1, 0.0, 7, 2, 0.0, 7, 3, 0.0, 7, 4, 0.0, 7, 5, 0.0, 7, 6, 0.0, 7, 7, 0.0, 7, 8, 1.0, 7, 9, 0.0, 7, 10, 0.0, 7, 11, 0.0, 7, 12, 0.0, 7, 13, 0.0, 7, 14, 0.0, 7, 15, 0.0, 8, 0, 0.0, 8, 1, 0.0, 8, 2, 0.0, 8, 3, 0.0, 8, 4, 0.0, 8, 5, 0.0, 8, 6, 0.0, 8, 7, 0.0, 8, 8, 0.0, 8, 9, 1.0, 8, 10, 0.0, 8, 11, 0.0, 8, 12, 0.0, 8, 13, 0.0, 8, 14, 0.0, 8, 15, 0.0, 9, 0, 0.0, 9, 1, 0.0, 9, 2, 0.0, 9, 3, 0.0, 9, 4, 0.0, 9, 5, 0.0, 9, 6, 0.0, 9, 7, 0.0, 9, 8, 0.0, 9, 9, 0.0, 9, 10, 1.0, 9, 11, 0.0, 9, 12, 0.0, 9, 13, 0.0, 9, 14, 0.0, 9, 15, 0.0, 10, 0, 0.0, 10, 1, 0.0, 10, 2, 0.0, 10, 3, 0.0, 10, 4, 0.0, 10, 5, 0.0, 10, 6, 0.0, 10, 7, 0.0, 256, "obj-8", "matrixctrl", "list", 10, 8, 0.0, 10, 9, 0.0, 10, 10, 0.0, 10, 11, 1.0, 10, 12, 0.0, 10, 13, 0.0, 10, 14, 0.0, 10, 15, 0.0, 11, 0, 0.0, 11, 1, 0.0, 11, 2, 0.0, 11, 3, 0.0, 11, 4, 0.0, 11, 5, 0.0, 11, 6, 0.0, 11, 7, 0.0, 11, 8, 0.0, 11, 9, 0.0, 11, 10, 0.0, 11, 11, 0.0, 11, 12, 1.0, 11, 13, 0.0, 11, 14, 0.0, 11, 15, 0.0, 12, 0, 0.0, 12, 1, 0.0, 12, 2, 0.0, 12, 3, 0.0, 12, 4, 0.0, 12, 5, 0.0, 12, 6, 0.0, 12, 7, 0.0, 12, 8, 0.0, 12, 9, 0.0, 12, 10, 0.0, 12, 11, 0.0, 12, 12, 0.0, 12, 13, 1.0, 12, 14, 0.0, 12, 15, 0.0, 13, 0, 0.0, 13, 1, 0.0, 13, 2, 0.0, 13, 3, 0.0, 13, 4, 0.0, 13, 5, 0.0, 13, 6, 0.0, 13, 7, 0.0, 13, 8, 0.0, 13, 9, 0.0, 13, 10, 0.0, 13, 11, 0.0, 13, 12, 0.0, 13, 13, 0.0, 13, 14, 1.0, 13, 15, 0.0, 14, 0, 0.0, 14, 1, 0.0, 14, 2, 0.0, 14, 3, 0.0, 14, 4, 0.0, 14, 5, 0.0, 14, 6, 0.0, 14, 7, 0.0, 14, 8, 0.0, 14, 9, 0.0, 14, 10, 0.0, 14, 11, 0.0, 14, 12, 0.0, 14, 13, 0.0, 14, 14, 0.0, 14, 15, 1.0, 15, 0, 1.0, 15, 1, 0.0, 15, 2, 0.0, 15, 3, 0.0, 15, 4, 0.0, 15, 5, 0.0, 15, 6, 0.0, 15, 7, 0.0, 15, 8, 0.0, 15, 9, 0.0, 15, 10, 0.0, 15, 11, 0.0, 16, "obj-8", "matrixctrl", "list", 15, 12, 0.0, 15, 13, 0.0, 15, 14, 0.0, 15, 15, 0.0 ]
+											"data" : [ 256, "obj-8", "matrixctrl", "list", 0, 0, 1.0, 0, 1, 1.0, 0, 2, 0.0, 0, 3, 0.0, 0, 4, 0.0, 0, 5, 0.0, 0, 6, 0.0, 0, 7, 0.0, 0, 8, 0.0, 0, 9, 0.0, 0, 10, 0.0, 0, 11, 0.0, 0, 12, 0.0, 0, 13, 0.0, 0, 14, 0.0, 0, 15, 0.0, 1, 0, 1.0, 1, 1, 0.0, 1, 2, 1.0, 1, 3, 0.0, 1, 4, 0.0, 1, 5, 0.0, 1, 6, 0.0, 1, 7, 0.0, 1, 8, 0.0, 1, 9, 0.0, 1, 10, 0.0, 1, 11, 0.0, 1, 12, 0.0, 1, 13, 0.0, 1, 14, 0.0, 1, 15, 0.0, 2, 0, 0.0, 2, 1, 0.0, 2, 2, 1.0, 2, 3, 1.0, 2, 4, 0.0, 2, 5, 0.0, 2, 6, 0.0, 2, 7, 0.0, 2, 8, 0.0, 2, 9, 0.0, 2, 10, 0.0, 2, 11, 0.0, 2, 12, 0.0, 2, 13, 0.0, 2, 14, 0.0, 2, 15, 0.0, 3, 0, 0.0, 3, 1, 0.0, 3, 2, 0.0, 3, 3, 0.0, 3, 4, 1.0, 3, 5, 0.0, 3, 6, 0.0, 3, 7, 0.0, 3, 8, 0.0, 3, 9, 0.0, 3, 10, 0.0, 3, 11, 0.0, 3, 12, 0.0, 3, 13, 0.0, 3, 14, 0.0, 3, 15, 0.0, 4, 0, 0.0, 4, 1, 0.0, 4, 2, 0.0, 4, 3, 0.0, 4, 4, 0.0, 4, 5, 1.0, 4, 6, 0.0, 4, 7, 0.0, 4, 8, 0.0, 4, 9, 0.0, 4, 10, 0.0, 4, 11, 0.0, 4, 12, 0.0, 4, 13, 0.0, 4, 14, 0.0, 4, 15, 0.0, 5, 0, 0.0, 5, 1, 0.0, 5, 2, 0.0, 5, 3, 0.0, 256, "obj-8", "matrixctrl", "list", 5, 4, 0.0, 5, 5, 0.0, 5, 6, 1.0, 5, 7, 0.0, 5, 8, 0.0, 5, 9, 0.0, 5, 10, 0.0, 5, 11, 0.0, 5, 12, 0.0, 5, 13, 0.0, 5, 14, 0.0, 5, 15, 0.0, 6, 0, 0.0, 6, 1, 0.0, 6, 2, 0.0, 6, 3, 0.0, 6, 4, 0.0, 6, 5, 0.0, 6, 6, 0.0, 6, 7, 1.0, 6, 8, 0.0, 6, 9, 0.0, 6, 10, 0.0, 6, 11, 0.0, 6, 12, 0.0, 6, 13, 0.0, 6, 14, 0.0, 6, 15, 0.0, 7, 0, 0.0, 7, 1, 0.0, 7, 2, 0.0, 7, 3, 0.0, 7, 4, 0.0, 7, 5, 0.0, 7, 6, 0.0, 7, 7, 0.0, 7, 8, 1.0, 7, 9, 0.0, 7, 10, 0.0, 7, 11, 0.0, 7, 12, 0.0, 7, 13, 0.0, 7, 14, 0.0, 7, 15, 0.0, 8, 0, 0.0, 8, 1, 0.0, 8, 2, 0.0, 8, 3, 0.0, 8, 4, 0.0, 8, 5, 0.0, 8, 6, 0.0, 8, 7, 0.0, 8, 8, 0.0, 8, 9, 1.0, 8, 10, 0.0, 8, 11, 0.0, 8, 12, 0.0, 8, 13, 0.0, 8, 14, 0.0, 8, 15, 0.0, 9, 0, 0.0, 9, 1, 0.0, 9, 2, 0.0, 9, 3, 0.0, 9, 4, 0.0, 9, 5, 0.0, 9, 6, 0.0, 9, 7, 0.0, 9, 8, 0.0, 9, 9, 0.0, 9, 10, 1.0, 9, 11, 0.0, 9, 12, 0.0, 9, 13, 0.0, 9, 14, 0.0, 9, 15, 0.0, 10, 0, 0.0, 10, 1, 0.0, 10, 2, 0.0, 10, 3, 0.0, 10, 4, 0.0, 10, 5, 0.0, 10, 6, 0.0, 10, 7, 0.0, 256, "obj-8", "matrixctrl", "list", 10, 8, 0.0, 10, 9, 0.0, 10, 10, 0.0, 10, 11, 1.0, 10, 12, 0.0, 10, 13, 0.0, 10, 14, 0.0, 10, 15, 0.0, 11, 0, 0.0, 11, 1, 0.0, 11, 2, 0.0, 11, 3, 0.0, 11, 4, 0.0, 11, 5, 0.0, 11, 6, 0.0, 11, 7, 0.0, 11, 8, 0.0, 11, 9, 0.0, 11, 10, 0.0, 11, 11, 0.0, 11, 12, 1.0, 11, 13, 0.0, 11, 14, 0.0, 11, 15, 0.0, 12, 0, 0.0, 12, 1, 0.0, 12, 2, 0.0, 12, 3, 0.0, 12, 4, 0.0, 12, 5, 0.0, 12, 6, 0.0, 12, 7, 0.0, 12, 8, 0.0, 12, 9, 0.0, 12, 10, 0.0, 12, 11, 0.0, 12, 12, 0.0, 12, 13, 1.0, 12, 14, 0.0, 12, 15, 0.0, 13, 0, 0.0, 13, 1, 0.0, 13, 2, 0.0, 13, 3, 0.0, 13, 4, 0.0, 13, 5, 0.0, 13, 6, 0.0, 13, 7, 0.0, 13, 8, 0.0, 13, 9, 0.0, 13, 10, 0.0, 13, 11, 0.0, 13, 12, 0.0, 13, 13, 0.0, 13, 14, 1.0, 13, 15, 0.0, 14, 0, 0.0, 14, 1, 0.0, 14, 2, 0.0, 14, 3, 0.0, 14, 4, 0.0, 14, 5, 0.0, 14, 6, 0.0, 14, 7, 0.0, 14, 8, 0.0, 14, 9, 0.0, 14, 10, 0.0, 14, 11, 0.0, 14, 12, 0.0, 14, 13, 0.0, 14, 14, 0.0, 14, 15, 1.0, 15, 0, 1.0, 15, 1, 0.0, 15, 2, 0.0, 15, 3, 0.0, 15, 4, 0.0, 15, 5, 0.0, 15, 6, 0.0, 15, 7, 0.0, 15, 8, 0.0, 15, 9, 0.0, 15, 10, 0.0, 15, 11, 0.0, 16, "obj-8", "matrixctrl", "list", 15, 12, 0.0, 15, 13, 0.0, 15, 14, 0.0, 15, 15, 0.0 ]
 										}
 , 										{
 											"number" : 2,
-											"data" : [ 256, "obj-8", "matrixctrl", "list", 0, 0, 0.0, 0, 1, 1.0, 0, 2, 0.0, 0, 3, 0.0, 0, 4, 0.0, 0, 5, 0.0, 0, 6, 0.0, 0, 7, 0.0, 0, 8, 0.0, 0, 9, 0.0, 0, 10, 0.0, 0, 11, 0.0, 0, 12, 0.0, 0, 13, 0.0, 0, 14, 0.0, 0, 15, 0.0, 1, 0, 0.0, 1, 1, 0.0, 1, 2, 1.0, 1, 3, 0.0, 1, 4, 0.0, 1, 5, 0.0, 1, 6, 0.0, 1, 7, 0.0, 1, 8, 0.0, 1, 9, 0.0, 1, 10, 0.0, 1, 11, 0.0, 1, 12, 0.0, 1, 13, 0.0, 1, 14, 0.0, 1, 15, 0.0, 2, 0, 0.0, 2, 1, 0.0, 2, 2, 0.0, 2, 3, 1.0, 2, 4, 0.0, 2, 5, 0.0, 2, 6, 0.0, 2, 7, 0.0, 2, 8, 0.0, 2, 9, 0.0, 2, 10, 0.0, 2, 11, 0.0, 2, 12, 0.0, 2, 13, 0.0, 2, 14, 0.0, 2, 15, 0.0, 3, 0, 0.0, 3, 1, 0.0, 3, 2, 0.0, 3, 3, 0.0, 3, 4, 1.0, 3, 5, 0.0, 3, 6, 0.0, 3, 7, 0.0, 3, 8, 0.0, 3, 9, 0.0, 3, 10, 0.0, 3, 11, 0.0, 3, 12, 0.0, 3, 13, 0.0, 3, 14, 0.0, 3, 15, 0.0, 4, 0, 1.0, 4, 1, 0.0, 4, 2, 0.0, 4, 3, 0.0, 4, 4, 0.0, 4, 5, 1.0, 4, 6, 0.0, 4, 7, 0.0, 4, 8, 0.0, 4, 9, 0.0, 4, 10, 0.0, 4, 11, 0.0, 4, 12, 0.0, 4, 13, 0.0, 4, 14, 0.0, 4, 15, 0.0, 5, 0, 0.0, 5, 1, 0.0, 5, 2, 0.0, 5, 3, 0.0, 256, "obj-8", "matrixctrl", "list", 5, 4, 0.0, 5, 5, 0.0, 5, 6, 1.0, 5, 7, 0.0, 5, 8, 0.0, 5, 9, 0.0, 5, 10, 0.0, 5, 11, 0.0, 5, 12, 0.0, 5, 13, 0.0, 5, 14, 0.0, 5, 15, 0.0, 6, 0, 0.0, 6, 1, 0.0, 6, 2, 0.0, 6, 3, 0.0, 6, 4, 0.0, 6, 5, 0.0, 6, 6, 0.0, 6, 7, 1.0, 6, 8, 0.0, 6, 9, 0.0, 6, 10, 0.0, 6, 11, 0.0, 6, 12, 0.0, 6, 13, 0.0, 6, 14, 0.0, 6, 15, 0.0, 7, 0, 0.0, 7, 1, 0.0, 7, 2, 0.0, 7, 3, 0.0, 7, 4, 0.0, 7, 5, 0.0, 7, 6, 0.0, 7, 7, 0.0, 7, 8, 1.0, 7, 9, 0.0, 7, 10, 0.0, 7, 11, 0.0, 7, 12, 0.0, 7, 13, 0.0, 7, 14, 0.0, 7, 15, 0.0, 8, 0, 0.0, 8, 1, 0.0, 8, 2, 0.0, 8, 3, 0.0, 8, 4, 0.0, 8, 5, 0.0, 8, 6, 0.0, 8, 7, 0.0, 8, 8, 0.0, 8, 9, 1.0, 8, 10, 0.0, 8, 11, 0.0, 8, 12, 0.0, 8, 13, 0.0, 8, 14, 0.0, 8, 15, 0.0, 9, 0, 1.0, 9, 1, 0.0, 9, 2, 0.0, 9, 3, 0.0, 9, 4, 0.0, 9, 5, 0.0, 9, 6, 0.0, 9, 7, 0.0, 9, 8, 0.0, 9, 9, 0.0, 9, 10, 1.0, 9, 11, 0.0, 9, 12, 0.0, 9, 13, 0.0, 9, 14, 0.0, 9, 15, 0.0, 10, 0, 0.0, 10, 1, 0.0, 10, 2, 0.0, 10, 3, 0.0, 10, 4, 0.0, 10, 5, 0.0, 10, 6, 0.0, 10, 7, 0.0, 256, "obj-8", "matrixctrl", "list", 10, 8, 0.0, 10, 9, 0.0, 10, 10, 0.0, 10, 11, 1.0, 10, 12, 0.0, 10, 13, 0.0, 10, 14, 0.0, 10, 15, 0.0, 11, 0, 0.0, 11, 1, 0.0, 11, 2, 0.0, 11, 3, 0.0, 11, 4, 0.0, 11, 5, 0.0, 11, 6, 0.0, 11, 7, 0.0, 11, 8, 0.0, 11, 9, 0.0, 11, 10, 0.0, 11, 11, 0.0, 11, 12, 1.0, 11, 13, 0.0, 11, 14, 0.0, 11, 15, 0.0, 12, 0, 0.0, 12, 1, 0.0, 12, 2, 0.0, 12, 3, 0.0, 12, 4, 0.0, 12, 5, 0.0, 12, 6, 0.0, 12, 7, 0.0, 12, 8, 0.0, 12, 9, 0.0, 12, 10, 0.0, 12, 11, 0.0, 12, 12, 0.0, 12, 13, 1.0, 12, 14, 0.0, 12, 15, 0.0, 13, 0, 0.0, 13, 1, 0.0, 13, 2, 0.0, 13, 3, 0.0, 13, 4, 0.0, 13, 5, 0.0, 13, 6, 0.0, 13, 7, 0.0, 13, 8, 0.0, 13, 9, 0.0, 13, 10, 0.0, 13, 11, 0.0, 13, 12, 0.0, 13, 13, 0.0, 13, 14, 1.0, 13, 15, 0.0, 14, 0, 0.0, 14, 1, 0.0, 14, 2, 0.0, 14, 3, 0.0, 14, 4, 0.0, 14, 5, 0.0, 14, 6, 0.0, 14, 7, 0.0, 14, 8, 0.0, 14, 9, 0.0, 14, 10, 0.0, 14, 11, 0.0, 14, 12, 0.0, 14, 13, 0.0, 14, 14, 0.0, 14, 15, 1.0, 15, 0, 1.0, 15, 1, 0.0, 15, 2, 0.0, 15, 3, 0.0, 15, 4, 0.0, 15, 5, 0.0, 15, 6, 0.0, 15, 7, 0.0, 15, 8, 0.0, 15, 9, 0.0, 15, 10, 0.0, 15, 11, 0.0, 16, "obj-8", "matrixctrl", "list", 15, 12, 0.0, 15, 13, 0.0, 15, 14, 0.0, 15, 15, 0.0 ]
+											"data" : [ 256, "obj-8", "matrixctrl", "list", 0, 0, 1.0, 0, 1, 1.0, 0, 2, 0.0, 0, 3, 0.0, 0, 4, 0.0, 0, 5, 0.0, 0, 6, 0.0, 0, 7, 0.0, 0, 8, 0.0, 0, 9, 0.0, 0, 10, 0.0, 0, 11, 0.0, 0, 12, 0.0, 0, 13, 0.0, 0, 14, 0.0, 0, 15, 0.0, 1, 0, 1.0, 1, 1, 0.0, 1, 2, 1.0, 1, 3, 0.0, 1, 4, 0.0, 1, 5, 0.0, 1, 6, 0.0, 1, 7, 0.0, 1, 8, 0.0, 1, 9, 0.0, 1, 10, 0.0, 1, 11, 0.0, 1, 12, 0.0, 1, 13, 0.0, 1, 14, 0.0, 1, 15, 0.0, 2, 0, 0.0, 2, 1, 0.0, 2, 2, 1.0, 2, 3, 1.0, 2, 4, 0.0, 2, 5, 0.0, 2, 6, 0.0, 2, 7, 0.0, 2, 8, 0.0, 2, 9, 0.0, 2, 10, 0.0, 2, 11, 0.0, 2, 12, 0.0, 2, 13, 0.0, 2, 14, 0.0, 2, 15, 0.0, 3, 0, 0.0, 3, 1, 0.0, 3, 2, 0.0, 3, 3, 0.0, 3, 4, 1.0, 3, 5, 0.0, 3, 6, 0.0, 3, 7, 0.0, 3, 8, 0.0, 3, 9, 0.0, 3, 10, 0.0, 3, 11, 0.0, 3, 12, 0.0, 3, 13, 0.0, 3, 14, 0.0, 3, 15, 0.0, 4, 0, 0.0, 4, 1, 0.0, 4, 2, 0.0, 4, 3, 0.0, 4, 4, 0.0, 4, 5, 1.0, 4, 6, 0.0, 4, 7, 0.0, 4, 8, 0.0, 4, 9, 0.0, 4, 10, 0.0, 4, 11, 0.0, 4, 12, 0.0, 4, 13, 0.0, 4, 14, 0.0, 4, 15, 0.0, 5, 0, 0.0, 5, 1, 0.0, 5, 2, 0.0, 5, 3, 0.0, 256, "obj-8", "matrixctrl", "list", 5, 4, 0.0, 5, 5, 0.0, 5, 6, 1.0, 5, 7, 0.0, 5, 8, 0.0, 5, 9, 0.0, 5, 10, 0.0, 5, 11, 0.0, 5, 12, 0.0, 5, 13, 0.0, 5, 14, 0.0, 5, 15, 0.0, 6, 0, 0.0, 6, 1, 0.0, 6, 2, 0.0, 6, 3, 0.0, 6, 4, 0.0, 6, 5, 0.0, 6, 6, 0.0, 6, 7, 1.0, 6, 8, 0.0, 6, 9, 0.0, 6, 10, 0.0, 6, 11, 0.0, 6, 12, 0.0, 6, 13, 0.0, 6, 14, 0.0, 6, 15, 0.0, 7, 0, 0.0, 7, 1, 0.0, 7, 2, 0.0, 7, 3, 0.0, 7, 4, 0.0, 7, 5, 0.0, 7, 6, 0.0, 7, 7, 0.0, 7, 8, 1.0, 7, 9, 0.0, 7, 10, 0.0, 7, 11, 0.0, 7, 12, 0.0, 7, 13, 0.0, 7, 14, 0.0, 7, 15, 0.0, 8, 0, 0.0, 8, 1, 0.0, 8, 2, 0.0, 8, 3, 0.0, 8, 4, 0.0, 8, 5, 0.0, 8, 6, 0.0, 8, 7, 0.0, 8, 8, 0.0, 8, 9, 1.0, 8, 10, 0.0, 8, 11, 0.0, 8, 12, 0.0, 8, 13, 0.0, 8, 14, 0.0, 8, 15, 0.0, 9, 0, 0.0, 9, 1, 0.0, 9, 2, 0.0, 9, 3, 0.0, 9, 4, 0.0, 9, 5, 0.0, 9, 6, 0.0, 9, 7, 0.0, 9, 8, 0.0, 9, 9, 0.0, 9, 10, 1.0, 9, 11, 0.0, 9, 12, 0.0, 9, 13, 0.0, 9, 14, 0.0, 9, 15, 0.0, 10, 0, 0.0, 10, 1, 0.0, 10, 2, 1.0, 10, 3, 0.0, 10, 4, 0.0, 10, 5, 0.0, 10, 6, 0.0, 10, 7, 0.0, 256, "obj-8", "matrixctrl", "list", 10, 8, 0.0, 10, 9, 0.0, 10, 10, 0.0, 10, 11, 1.0, 10, 12, 0.0, 10, 13, 0.0, 10, 14, 0.0, 10, 15, 0.0, 11, 0, 0.0, 11, 1, 0.0, 11, 2, 0.0, 11, 3, 0.0, 11, 4, 0.0, 11, 5, 0.0, 11, 6, 0.0, 11, 7, 0.0, 11, 8, 0.0, 11, 9, 0.0, 11, 10, 0.0, 11, 11, 0.0, 11, 12, 1.0, 11, 13, 0.0, 11, 14, 0.0, 11, 15, 0.0, 12, 0, 0.0, 12, 1, 0.0, 12, 2, 0.0, 12, 3, 0.0, 12, 4, 0.0, 12, 5, 0.0, 12, 6, 0.0, 12, 7, 0.0, 12, 8, 0.0, 12, 9, 0.0, 12, 10, 0.0, 12, 11, 0.0, 12, 12, 0.0, 12, 13, 1.0, 12, 14, 0.0, 12, 15, 0.0, 13, 0, 0.0, 13, 1, 0.0, 13, 2, 0.0, 13, 3, 0.0, 13, 4, 0.0, 13, 5, 0.0, 13, 6, 0.0, 13, 7, 0.0, 13, 8, 0.0, 13, 9, 0.0, 13, 10, 0.0, 13, 11, 0.0, 13, 12, 0.0, 13, 13, 0.0, 13, 14, 1.0, 13, 15, 0.0, 14, 0, 0.0, 14, 1, 0.0, 14, 2, 0.0, 14, 3, 0.0, 14, 4, 0.0, 14, 5, 0.0, 14, 6, 0.0, 14, 7, 0.0, 14, 8, 0.0, 14, 9, 0.0, 14, 10, 0.0, 14, 11, 0.0, 14, 12, 0.0, 14, 13, 0.0, 14, 14, 0.0, 14, 15, 1.0, 15, 0, 1.0, 15, 1, 0.0, 15, 2, 0.0, 15, 3, 0.0, 15, 4, 0.0, 15, 5, 0.0, 15, 6, 0.0, 15, 7, 0.0, 15, 8, 0.0, 15, 9, 0.0, 15, 10, 0.0, 15, 11, 0.0, 16, "obj-8", "matrixctrl", "list", 15, 12, 0.0, 15, 13, 0.0, 15, 14, 0.0, 15, 15, 0.0 ]
 										}
  ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-1",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 27.0, 639.0, 179.0, 22.0 ],
-									"restore" : [ 0, 0, 1.0, 0, 1, 1.0, 1, 0, 1.0, 1, 2, 1.0, 2, 1, 1.0, 2, 2, 1.0, 3, 4, 1.0, 4, 5, 1.0, 5, 6, 1.0, 6, 7, 1.0, 7, 8, 1.0, 8, 9, 1.0, 9, 10, 1.0, 10, 11, 1.0, 11, 12, 1.0, 12, 13, 1.0, 13, 14, 1.0, 14, 15, 1.0, 15, 0, 1.0 ],
-									"saved_object_attributes" : 									{
-										"parameter_enable" : 0,
-										"parameter_mappable" : 0
-									}
-,
-									"text" : "pattr sequence @bindto markov",
-									"varname" : "sequence"
 								}
 
 							}
@@ -4273,7 +4359,7 @@
 							"isbase64" : 1,
 							"sliderorder" : [  ],
 							"slidervisibility" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
-							"blob" : "1172.VMjLgrHA...O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9bSN03hUMczXWEjKt3hYt3hKt.kKt3hKt3BS5gEcyQjKtvjctXTR5AkaA4hKtfjYisVUwvjKP4hKE4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKBIGaUMTRSgDaH4hKtXWdOMCLFElYXcUV30zUZUGMV8DZDk1R1gjPHsFMwfUcQYkVzMlUOgFUEUkQvHjSncSZOYlcoU0Y2YjVmcmQgcVVUoEcQcEVsUEaUsVRsgkYtbTXvLlUZQWVUkEdMckV0QiUOgFTosjcyHUSn4hPhgWUwH1ZQ01TmAiUYgCRBE0ZYYEVvbmQiglKRM0amc0Sn4RZKYmZCwTLhkGSyfTZMECSC0zLlkGSyXVZHYlKqI1ZQQUVxUjUjgCRBwDcHMUSn4hPQsVSVgEMvjFR1MCdLECUS4DMpMkSzfUZMECRSwTdpMkSn4BdT81aWkENHIDSzQTdMMiKCwjctLDS44xTNQCTC0zcTkFRlQDQioWQwfUbvjFR1MiTMglKnA0YMIiXMU0QgoGLogjcyfVS3wzPLkmY40TLlkWSwXVdLcmKS0DZtfFTm0jLhgENrM1ZIc0Sn4RZKkmYSwjcXMTSzP0TLoGQS4zLLMDS4gjPHgzZwjkaMUjVqcGaYgCRBwDctjFRlYFUZ01YrEEdUYkX3fjPLQGUogjYTQEV3cmUjQzZrkEaUIiXugCaggCRRwDctjFRlYGUXoWUFE0aYwVVvzzUZUGMV8DZDk1R1gjPH0DNFkkTEYzXqASZHY2LnwjdTMTSv.0TMECTo0DMtLUSyn1TNglKRMUcQYTTqEzQi4FLogjcyfGSxn1TNQiZS4DMTkFS4QTZMgmYC0DZtHjTuMlQZMTUGMFNHIDSzQ0TNYGU4wzLlMUSzvTZMICS40jcXkFRlYmdgISSTMldvjFR1MiPLglK3AUc2ESX3AidgoVUV8DZtj1R4wTdLkGS4wTdPkGS3gUdMoGTCwzLHIDRRUEaisVRsgUS3XTVqASZHY2LB0zcXkVSwfUZMACV40TdHMUSvnVZLglKRE1amczT00TLZgCRBwDZtH0XuMVUZoVTGoENHIkS4QUZHYFUWoERUYkVsclQigCRB0TdTkFR0MyPt3hKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYjKAQjYPQSPWgUdMcjKAQjct3hdA4hKt3hKt3hKtnTUv.UQAslXuk0UXoWUFE0YQcEV77RRC8Vav8lak4Fc9vyKVMEUy.Ea0cVZtMEcgQWY9.."
+							"blob" : "1166.VMjLgTHA...O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9bSNv3hUMczXWEjKt3hYt3hKt.kKt3hKt3BS5gEcyQjKtfjYqXTR5AkaA4hKtfjYisVUwvjKP4hKE4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKBgEaUMTRSgzYH4hKtXWdOMCLFElYXcUV30zUZUGMV8DZDk1R1gjPHsFMwfUcQYkVzMlUOgFUEUkQvHjSncSZOYlcoU0Y2YjVmcmQgcVVUoEcQcEVsUEaUsVRsgkYtbTXvLlUZQWVUkEdMckV0QiUOgFTosjcyHUSn4hPhgWUwH1ZQ01TmAiUYgCRBE0ZYYEVvbmQiglKRM0amc0Sn4RZKgmX40DLlkWSyn1PLECRS0DZtHDU3UkQQs1cVgEMvjFR1MCZLACRBgDQUECVms1UOglKosTdXMUSzn1TNQiZo0TLXkFS2wzTNQCRBgzTqwFYqASZHY2LRwjLlMDS14xPLYGSCwDMpMTS5QzTMglKRAkdQcEVoMmUOglKosDLHIDRBUTLhkGLTMlbQc0Sn4RZKECR4wjcLMjSxf0PNICVC4TdDMDSvfjPHITQwHVdmASXwTEahgCRBwDcLMjS24RZMomZS0zcPMESzXVdLYGSogjYlQkVscVLT4VUFEFavjFR1MiPLglKBI0aiYjVFkzUYcGLogjcyHUSn4hTQcVRGEFMQQkVrkkUik2ZwDFcvjFR2MiPLglKBM0YQcUVDsFaYwVUxH1a3vVX3fjTLQmKogjY5oWXpkTUXoWUV8DZtj1R3A0TMoGUC0DLXMTSwn1PLAiYS4DMHIDRMgiQYQTUFIldmY0Sn4RZKkmXS4DMpMkSzn1TMgGSSwTLHMjS5gjPHgzZwjkaMQ0X5ASZHY2LR0DMtLUS4Y1PNAiZ4wTLhkGSx3RZMglKBMUciICTvD0UOglKosjcHIDRCgiQgUWRWMUcQYUV3fjPLQGS4wTdLkGS4wzPMkGRo0jLPMTS1YVZHYFRUkULUwlXnAidgoVUV8DZtj1R5QTZMECVo0TLTkVSxvTZLACUS4DdHIDRyslQjwDNwfUbvjFR1gjPHAyZwT0aQYzXtASZHQCSS0DZtH0XucFUY81XFokdvjFR5wzTMg1Mn8jKt3hKt3hKt3hKt3hRUACTEEzZh8VVWgkdUYTTmE0UX4BQP4hPqcjXm0jLh4BQP4xPt.0Qt3hKt3hKt3hKtQUUCUEQTg2ZrM1YQcUVDUjQicVP77RRC8Vav8lak4Fc9vyKVMEUy.Ea0cVZtMEcgQWY9.."
 						}
 ,
 						"snapshotlist" : 						{
@@ -4297,7 +4383,7 @@
 										"isbase64" : 1,
 										"sliderorder" : [  ],
 										"slidervisibility" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
-										"blob" : "1172.VMjLgrHA...O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9bSN03hUMczXWEjKt3hYt3hKt.kKt3hKt3BS5gEcyQjKtvjctXTR5AkaA4hKtfjYisVUwvjKP4hKE4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKBIGaUMTRSgDaH4hKtXWdOMCLFElYXcUV30zUZUGMV8DZDk1R1gjPHsFMwfUcQYkVzMlUOgFUEUkQvHjSncSZOYlcoU0Y2YjVmcmQgcVVUoEcQcEVsUEaUsVRsgkYtbTXvLlUZQWVUkEdMckV0QiUOgFTosjcyHUSn4hPhgWUwH1ZQ01TmAiUYgCRBE0ZYYEVvbmQiglKRM0amc0Sn4RZKYmZCwTLhkGSyfTZMECSC0zLlkGSyXVZHYlKqI1ZQQUVxUjUjgCRBwDcHMUSn4hPQsVSVgEMvjFR1MCdLECUS4DMpMkSzfUZMECRSwTdpMkSn4BdT81aWkENHIDSzQTdMMiKCwjctLDS44xTNQCTC0zcTkFRlQDQioWQwfUbvjFR1MiTMglKnA0YMIiXMU0QgoGLogjcyfVS3wzPLkmY40TLlkWSwXVdLcmKS0DZtfFTm0jLhgENrM1ZIc0Sn4RZKkmYSwjcXMTSzP0TLoGQS4zLLMDS4gjPHgzZwjkaMUjVqcGaYgCRBwDctjFRlYFUZ01YrEEdUYkX3fjPLQGUogjYTQEV3cmUjQzZrkEaUIiXugCaggCRRwDctjFRlYGUXoWUFE0aYwVVvzzUZUGMV8DZDk1R1gjPH0DNFkkTEYzXqASZHY2LnwjdTMTSv.0TMECTo0DMtLUSyn1TNglKRMUcQYTTqEzQi4FLogjcyfGSxn1TNQiZS4DMTkFS4QTZMgmYC0DZtHjTuMlQZMTUGMFNHIDSzQ0TNYGU4wzLlMUSzvTZMICS40jcXkFRlYmdgISSTMldvjFR1MiPLglK3AUc2ESX3AidgoVUV8DZtj1R4wTdLkGS4wTdPkGS3gUdMoGTCwzLHIDRRUEaisVRsgUS3XTVqASZHY2LB0zcXkVSwfUZMACV40TdHMUSvnVZLglKRE1amczT00TLZgCRBwDZtH0XuMVUZoVTGoENHIkS4QUZHYFUWoERUYkVsclQigCRB0TdTkFR0MyPt3hKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYjKAQjYPQSPWgUdMcjKAQjct3hdA4hKt3hKt3hKtnTUv.UQAslXuk0UXoWUFE0YQcEV77RRC8Vav8lak4Fc9vyKVMEUy.Ea0cVZtMEcgQWY9.."
+										"blob" : "1166.VMjLgTHA...O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9bSNv3hUMczXWEjKt3hYt3hKt.kKt3hKt3BS5gEcyQjKtfjYqXTR5AkaA4hKtfjYisVUwvjKP4hKE4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKBgEaUMTRSgzYH4hKtXWdOMCLFElYXcUV30zUZUGMV8DZDk1R1gjPHsFMwfUcQYkVzMlUOgFUEUkQvHjSncSZOYlcoU0Y2YjVmcmQgcVVUoEcQcEVsUEaUsVRsgkYtbTXvLlUZQWVUkEdMckV0QiUOgFTosjcyHUSn4hPhgWUwH1ZQ01TmAiUYgCRBE0ZYYEVvbmQiglKRM0amc0Sn4RZKgmX40DLlkWSyn1PLECRS0DZtHDU3UkQQs1cVgEMvjFR1MCZLACRBgDQUECVms1UOglKosTdXMUSzn1TNQiZo0TLXkFS2wzTNQCRBgzTqwFYqASZHY2LRwjLlMDS14xPLYGSCwDMpMTS5QzTMglKRAkdQcEVoMmUOglKosDLHIDRBUTLhkGLTMlbQc0Sn4RZKECR4wjcLMjSxf0PNICVC4TdDMDSvfjPHITQwHVdmASXwTEahgCRBwDcLMjS24RZMomZS0zcPMESzXVdLYGSogjYlQkVscVLT4VUFEFavjFR1MiPLglKBI0aiYjVFkzUYcGLogjcyHUSn4hTQcVRGEFMQQkVrkkUik2ZwDFcvjFR2MiPLglKBM0YQcUVDsFaYwVUxH1a3vVX3fjTLQmKogjY5oWXpkTUXoWUV8DZtj1R3A0TMoGUC0DLXMTSwn1PLAiYS4DMHIDRMgiQYQTUFIldmY0Sn4RZKkmXS4DMpMkSzn1TMgGSSwTLHMjS5gjPHgzZwjkaMQ0X5ASZHY2LR0DMtLUS4Y1PNAiZ4wTLhkGSx3RZMglKBMUciICTvD0UOglKosjcHIDRCgiQgUWRWMUcQYUV3fjPLQGS4wTdLkGS4wzPMkGRo0jLPMTS1YVZHYFRUkULUwlXnAidgoVUV8DZtj1R5QTZMECVo0TLTkVSxvTZLACUS4DdHIDRyslQjwDNwfUbvjFR1gjPHAyZwT0aQYzXtASZHQCSS0DZtH0XucFUY81XFokdvjFR5wzTMg1Mn8jKt3hKt3hKt3hKt3hRUACTEEzZh8VVWgkdUYTTmE0UX4BQP4hPqcjXm0jLh4BQP4xPt.0Qt3hKt3hKt3hKtQUUCUEQTg2ZrM1YQcUVDUjQicVP77RRC8Vav8lak4Fc9vyKVMEUy.Ea0cVZtMEcgQWY9.."
 									}
 ,
 									"fileref" : 									{
@@ -4402,7 +4488,26 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-2",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 4,
+									"outlettype" : [ "", "", "", "" ],
+									"patching_rect" : [ 363.0, 16.0, 56.0, 22.0 ],
+									"restore" : 									{
+										"function" : [ 500.0, 0.0, 1.0, 0.0, 0.0, 0, 106.38297872340425, 0.0, 0, 106.38297872340425, 1.0, 0, 279.255319148936167, 0.16, 0, 393.617021276595722, 0.906666666666667, 0, 476.063829787234056, 0.0, 0, "linear" ],
+										"function[1]" : [ 1000.0, 0.0, 1.0, 0.0, 0.0, 0, 159.574468085106389, 0.906666666666667, 0, 329.787234042553166, 0.44, 0, 420.212765957446834, 0.04, 0, 627.659574468085111, 0.706666666666667, 0, 808.510638297872333, 0.0, 0, 1000.0, 0.0, 0, "linear" ]
+									}
+,
+									"text" : "autopattr",
+									"varname" : "u562006920"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-15",
 									"maxclass" : "newobj",
@@ -4434,7 +4539,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 201.0, 202.0, 85.0, 22.0 ],
-									"restore" : [ 6 ],
+									"restore" : [ 11 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0,
 										"parameter_mappable" : 0
@@ -4521,7 +4626,7 @@
 							}
 , 							{
 								"box" : 								{
-									"addpoints" : [ 0.0, 0.0, 0, 329.787234042553166, 0.44, 0, 420.212765957446834, 0.04, 0, 627.659574468085111, 0.706666666666667, 0, 808.510638297872333, 0.826666666666667, 0, 1000.0, 0.0, 0 ],
+									"addpoints" : [ 0.0, 0.0, 0, 159.574468085106389, 0.906666666666667, 0, 329.787234042553166, 0.44, 0, 420.212765957446834, 0.04, 0, 627.659574468085111, 0.706666666666667, 0, 808.510638297872333, 0.0, 0, 1000.0, 0.0, 0 ],
 									"classic_curve" : 1,
 									"id" : "obj-44",
 									"maxclass" : "function",
@@ -4529,7 +4634,8 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "float", "", "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 483.0, 57.0, 200.0, 100.0 ]
+									"patching_rect" : [ 483.0, 57.0, 200.0, 100.0 ],
+									"varname" : "function[1]"
 								}
 
 							}
@@ -4559,7 +4665,7 @@
 							}
 , 							{
 								"box" : 								{
-									"addpoints" : [ 0.0, 0.0, 0, 106.38297872340425, 1.0, 0, 279.255319148936167, 0.16, 0, 476.063829787234056, 0.0, 0 ],
+									"addpoints" : [ 0.0, 0.0, 0, 106.38297872340425, 0.0, 0, 106.38297872340425, 1.0, 0, 279.255319148936167, 0.16, 0, 393.617021276595722, 0.906666666666667, 0, 476.063829787234056, 0.0, 0 ],
 									"classic_curve" : 1,
 									"domain" : 500.0,
 									"id" : "obj-6",
@@ -4568,7 +4674,8 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "float", "", "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 267.0, 57.0, 200.0, 100.0 ]
+									"patching_rect" : [ 267.0, 57.0, 200.0, 100.0 ],
+									"varname" : "function"
 								}
 
 							}
@@ -4638,6 +4745,22 @@
 								"patchline" : 								{
 									"destination" : [ "obj-8", 0 ],
 									"source" : [ "obj-18", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-44", 0 ],
+									"order" : 0,
+									"source" : [ "obj-2", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"order" : 1,
+									"source" : [ "obj-2", 0 ]
 								}
 
 							}
@@ -4746,7 +4869,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 739.0, 373.0, 884.0, 508.0 ],
+						"rect" : [ 552.0, 373.0, 884.0, 508.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -4774,7 +4897,27 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-9",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 4,
+									"outlettype" : [ "", "", "", "" ],
+									"patching_rect" : [ 295.0, 12.0, 56.0, 22.0 ],
+									"restore" : 									{
+										"function" : [ 200.0, 0.0, 1.0, 0.0, 0.0, 0, 0.797872340425532, 0.386666666666667, 0, 3.98936170212766, 0.853333333333333, 0, 18.98936170212766, 0.84, 0, 51.063829787234042, 0.44, 0, 60.638297872340424, 0.066666666666667, 0, 73.40425531914893, 0.64, 0, 111.702127659574472, 0.0, 0, 144.680851063829778, 0.826666666666667, 0, 157.446808510638306, 0.826666666666667, 0, 160.638297872340416, 0.28, 0, 170.212765957446805, 0.813333333333333, 0, 182.978723404255305, 0.0, 0, "linear" ],
+										"function[1]" : [ 200.0, 0.0, 1.0, 0.0, 0.0, 0, 22.695035460992948, 0.573333333333333, 0, 66.312056737588691, 1.0, 0, 108.865248226950399, 0.226666666666667, 0, 200.0, 0.0, 0, "linear" ],
+										"function[2]" : [ 30.0, 0.0, 1.0, 0.0, 0.0, 0, 18.191489361702128, 1.0, 0, 18.191489361702128, 0.0, 0, 20.425531914893618, 0.986666666666667, 0, 22.180851063829788, 0.0, 0, 24.574468085106382, 0.826666666666667, 0, 27.925531914893618, 0.0, 0, 30.0, 1.0, 0, 30.0, 0.0, 0, "linear" ]
+									}
+,
+									"text" : "autopattr",
+									"varname" : "u452006798"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-5",
 									"maxclass" : "newobj",
@@ -4830,7 +4973,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 214.0, 250.0, 85.0, 22.0 ],
-									"restore" : [ 23 ],
+									"restore" : [ 60 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0,
 										"parameter_mappable" : 0
@@ -4917,7 +5060,7 @@
 							}
 , 							{
 								"box" : 								{
-									"addpoints" : [ 0.0, 0.0, 0, 0.0, 1.0, 0, 5.106382978723405, 0.08, 0, 20.26595744680851, 0.0, 0, 24.893617021276597, 0.853333333333333, 0, 27.925531914893618, 0.16, 0, 30.0, 1.0, 0, 30.0, 0.0, 0 ],
+									"addpoints" : [ 0.0, 0.0, 0, 18.191489361702128, 1.0, 0, 18.191489361702128, 0.0, 0, 20.425531914893618, 0.986666666666667, 0, 22.180851063829788, 0.0, 0, 24.574468085106382, 0.826666666666667, 0, 27.925531914893618, 0.0, 0, 30.0, 1.0, 0, 30.0, 0.0, 0 ],
 									"classic_curve" : 1,
 									"domain" : 30.0,
 									"id" : "obj-44",
@@ -4926,7 +5069,8 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "float", "", "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 483.0, 57.0, 200.0, 100.0 ]
+									"patching_rect" : [ 483.0, 57.0, 200.0, 100.0 ],
+									"varname" : "function[2]"
 								}
 
 							}
@@ -4956,7 +5100,7 @@
 							}
 , 							{
 								"box" : 								{
-									"addpoints" : [ 0.0, 0.0, 0, 0.797872340425532, 0.386666666666667, 0, 3.98936170212766, 0.853333333333333, 0, 13.085106382978724, 0.066666666666667, 0, 18.98936170212766, 0.84, 0, 18.98936170212766, 0.466666666666667, 0, 22.819148936170212, 0.573333333333333, 0, 30.0, 0.0, 0, 46.808510638297875, 0.08, 0, 51.063829787234042, 0.44, 0, 56.382978723404257, 0.066666666666667, 0, 68.085106382978722, 0.08, 0, 73.40425531914893, 0.64, 0, 78.723404255319153, 0.12, 0, 87.234042553191486, 0.413333333333333, 0, 93.61702127659575, 0.0, 0, 100.0, 0.773333333333333, 0, 110.638297872340431, 0.826666666666667, 0, 110.638297872340431, 0.106666666666667, 0, 117.021276595744681, 0.0, 0, 144.680851063829778, 0.826666666666667, 0, 157.446808510638306, 0.826666666666667, 0, 160.638297872340416, 0.28, 0, 170.212765957446805, 0.813333333333333, 0, 182.978723404255305, 0.0, 0 ],
+									"addpoints" : [ 0.0, 0.0, 0, 0.797872340425532, 0.386666666666667, 0, 3.98936170212766, 0.853333333333333, 0, 18.98936170212766, 0.84, 0, 51.063829787234042, 0.44, 0, 60.638297872340424, 0.066666666666667, 0, 73.40425531914893, 0.64, 0, 111.702127659574472, 0.0, 0, 144.680851063829778, 0.826666666666667, 0, 157.446808510638306, 0.826666666666667, 0, 160.638297872340416, 0.28, 0, 170.212765957446805, 0.813333333333333, 0, 182.978723404255305, 0.0, 0 ],
 									"classic_curve" : 1,
 									"domain" : 200.0,
 									"id" : "obj-23",
@@ -4965,7 +5109,8 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "float", "", "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 32.0, 61.0, 200.0, 100.0 ]
+									"patching_rect" : [ 32.0, 61.0, 200.0, 100.0 ],
+									"varname" : "function"
 								}
 
 							}
@@ -4995,7 +5140,7 @@
 							}
 , 							{
 								"box" : 								{
-									"addpoints" : [ 0.0, 0.0, 0, 22.695035460992948, 0.573333333333333, 0, 55.319148936170215, 0.0, 0, 104.255319148936167, 0.133333333333333, 0, 155.319148936170222, 1.0, 0, 200.0, 0.0, 0 ],
+									"addpoints" : [ 0.0, 0.0, 0, 22.695035460992948, 0.573333333333333, 0, 66.312056737588691, 1.0, 0, 108.865248226950399, 0.226666666666667, 0, 200.0, 0.0, 0 ],
 									"classic_curve" : 1,
 									"domain" : 200.0,
 									"id" : "obj-6",
@@ -5004,7 +5149,8 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "float", "", "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 266.666666666666629, 57.0, 200.0, 100.0 ]
+									"patching_rect" : [ 266.666666666666629, 57.0, 200.0, 100.0 ],
+									"varname" : "function[1]"
 								}
 
 							}
@@ -5164,6 +5310,30 @@
 								}
 
 							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-23", 0 ],
+									"order" : 2,
+									"source" : [ "obj-9", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-44", 0 ],
+									"order" : 0,
+									"source" : [ "obj-9", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"order" : 1,
+									"source" : [ "obj-9", 0 ]
+								}
+
+							}
  ]
 					}
 ,
@@ -5298,7 +5468,27 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-9",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 4,
+									"outlettype" : [ "", "", "", "" ],
+									"patching_rect" : [ 326.0, 12.0, 56.0, 22.0 ],
+									"restore" : 									{
+										"function" : [ 30.0, 0.0, 1.0, 0.0, 0.0, 0, 0.319148936170213, 1.0, 0, 3.51063829787234, 1.0, 0, 5.74468085106383, 1.0, 0, 11.329787234042554, 1.0, 0, 27.127659574468087, 0.0, 0, "linear" ],
+										"function[1]" : [ 200.0, 0.0, 1.0, 0.0, 0.0, 0, 30.851063829787233, 0.173333333333333, 0, 92.553191489361708, 0.946666666666667, 0, 143.61702127659575, 0.0, 0, "linear" ],
+										"function[2]" : [ 30.0, 0.0, 1.0, 0.0, 0.0, 0, 1.436170212765957, 1.0, 0, 3.51063829787234, 1.0, 0, 10.053191489361701, 0.693333333333333, 0, 17.393617021276597, 1.0, 0, 26.648936170212767, 0.866666666666667, 0, 30.0, 0.0, 0, "linear" ]
+									}
+,
+									"text" : "autopattr",
+									"varname" : "u141003066"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-5",
 									"maxclass" : "newobj",
@@ -5354,7 +5544,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 214.0, 250.0, 85.0, 22.0 ],
-									"restore" : [ 30 ],
+									"restore" : [ 13 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0,
 										"parameter_mappable" : 0
@@ -5441,7 +5631,7 @@
 							}
 , 							{
 								"box" : 								{
-									"addpoints" : [ 0.0, 0.0, 0, 0.614997373616443, 0.711955987612406, 0, 1.75531914893617, 0.12, 0, 3.51063829787234, 1.0, 0, 3.51063829787234, 0.453333333333333, 0, 4.946808510638298, 0.226666666666667, 0, 4.946808510638298, 0.0, 0, 6.063829787234043, 1.0, 0, 6.861702127659575, 0.493333333333333, 0, 10.053191489361701, 0.693333333333333, 0, 12.127659574468085, 0.133333333333333, 0, 26.648936170212767, 0.866666666666667, 0, 30.0, 0.0, 0 ],
+									"addpoints" : [ 0.0, 0.0, 0, 1.436170212765957, 1.0, 0, 3.51063829787234, 1.0, 0, 10.053191489361701, 0.693333333333333, 0, 17.393617021276597, 1.0, 0, 26.648936170212767, 0.866666666666667, 0, 30.0, 0.0, 0 ],
 									"classic_curve" : 1,
 									"domain" : 30.0,
 									"id" : "obj-44",
@@ -5450,7 +5640,8 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "float", "", "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 483.0, 57.0, 200.0, 100.0 ]
+									"patching_rect" : [ 483.0, 57.0, 200.0, 100.0 ],
+									"varname" : "function[2]"
 								}
 
 							}
@@ -5480,7 +5671,7 @@
 							}
 , 							{
 								"box" : 								{
-									"addpoints" : [ 0.0, 0.0, 0, 0.319148936170213, 1.0, 0, 0.614997373616443, 0.711955987612406, 0, 2.593193149313015, 0.0, 0, 3.98936170212766, 1.0, 0, 4.043870051490501, 0.34831964413325, 0, 5.626426672047758, 0.0, 0, 7.180851063829787, 0.413333333333333, 0, 8.617021276595745, 0.12, 0, 9.25531914893617, 0.64, 0, 11.329787234042554, 0.0, 0 ],
+									"addpoints" : [ 0.0, 0.0, 0, 0.319148936170213, 1.0, 0, 3.51063829787234, 1.0, 0, 5.74468085106383, 1.0, 0, 11.329787234042554, 1.0, 0, 27.127659574468087, 0.0, 0 ],
 									"classic_curve" : 1,
 									"domain" : 30.0,
 									"id" : "obj-23",
@@ -5489,7 +5680,8 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "float", "", "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 32.0, 61.0, 200.0, 100.0 ]
+									"patching_rect" : [ 32.0, 61.0, 200.0, 100.0 ],
+									"varname" : "function"
 								}
 
 							}
@@ -5519,7 +5711,7 @@
 							}
 , 							{
 								"box" : 								{
-									"addpoints" : [ 0.0, 0.0, 0, 1.063829787234043, 0.493333333333333, 0, 8.396215578343005, 0.16, 0, 19.148936170212767, 0.053333333333333, 0, 22.340425531914892, 0.866666666666667, 0, 29.787234042553191, 0.466666666666667, 0, 52.127659574468083, 0.0, 0, 200.0, 0.0, 0 ],
+									"addpoints" : [ 0.0, 0.0, 0, 30.851063829787233, 0.173333333333333, 0, 92.553191489361708, 0.946666666666667, 0, 143.61702127659575, 0.0, 0 ],
 									"classic_curve" : 1,
 									"domain" : 200.0,
 									"id" : "obj-6",
@@ -5528,7 +5720,8 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "float", "", "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 267.0, 57.0, 200.0, 100.0 ]
+									"patching_rect" : [ 267.0, 57.0, 200.0, 100.0 ],
+									"varname" : "function[1]"
 								}
 
 							}
@@ -5688,6 +5881,30 @@
 								}
 
 							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-23", 0 ],
+									"order" : 2,
+									"source" : [ "obj-9", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-44", 0 ],
+									"order" : 0,
+									"source" : [ "obj-9", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"order" : 1,
+									"source" : [ "obj-9", 0 ]
+								}
+
+							}
  ]
 					}
 ,
@@ -5722,7 +5939,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 796.0, 275.0, 640.0, 480.0 ],
+						"rect" : [ -171.0, 220.0, 941.0, 593.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -5750,7 +5967,27 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-9",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 4,
+									"outlettype" : [ "", "", "", "" ],
+									"patching_rect" : [ 326.0, 12.0, 56.0, 22.0 ],
+									"restore" : 									{
+										"function" : [ 30.0, 0.0, 1.0, 0.0, 0.0, 0, 0.319148936170213, 0.706666666666667, 0, 2.393617021276596, 0.053333333333333, 0, 30.0, 0.0, 0, "linear" ],
+										"function[1]" : [ 1000.0, 0.0, 1.0, 0.0, 0.0, 0, 28.368794326241336, 1.0, 0, 113.475177304964745, 0.346666666666667, 0, 182.624113475177523, 0.0, 0, "linear" ],
+										"function[2]" : [ 30.0, 0.0, 1.0, 0.0, 0.0, 0, 1.436170212765957, 0.386666666666667, 0, 2.872340425531915, 0.013333333333333, 0, 30.0, 0.0, 0, "linear" ]
+									}
+,
+									"text" : "autopattr",
+									"varname" : "u141003066"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-3",
 									"maxclass" : "newobj",
@@ -5794,7 +6031,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 224.0, 233.0, 85.0, 22.0 ],
-									"restore" : [ 4 ],
+									"restore" : [ 3 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0,
 										"parameter_mappable" : 0
@@ -5881,7 +6118,7 @@
 							}
 , 							{
 								"box" : 								{
-									"addpoints" : [ 0.0, 0.0, 0, 0.797872340425532, 0.173333333333333, 0, 2.074468085106383, 0.013333333333333, 0, 30.0, 0.0, 0 ],
+									"addpoints" : [ 0.0, 0.0, 0, 1.436170212765957, 0.386666666666667, 0, 2.872340425531915, 0.013333333333333, 0, 30.0, 0.0, 0 ],
 									"classic_curve" : 1,
 									"domain" : 30.0,
 									"id" : "obj-44",
@@ -5890,7 +6127,8 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "float", "", "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 482.0, 59.0, 200.0, 100.0 ]
+									"patching_rect" : [ 482.0, 59.0, 200.0, 100.0 ],
+									"varname" : "function[2]"
 								}
 
 							}
@@ -5920,7 +6158,7 @@
 							}
 , 							{
 								"box" : 								{
-									"addpoints" : [ 0.0, 0.0, 0, 0.319148936170213, 0.706666666666667, 0, 2.872340425531915, 0.066666666666667, 0, 30.0, 0.0, 0 ],
+									"addpoints" : [ 0.0, 0.0, 0, 0.319148936170213, 0.706666666666667, 0, 2.393617021276596, 0.053333333333333, 0, 30.0, 0.0, 0 ],
 									"classic_curve" : 1,
 									"domain" : 30.0,
 									"id" : "obj-23",
@@ -5929,7 +6167,8 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "float", "", "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 31.0, 59.0, 200.0, 100.0 ]
+									"patching_rect" : [ 31.0, 59.0, 200.0, 100.0 ],
+									"varname" : "function"
 								}
 
 							}
@@ -5959,7 +6198,7 @@
 							}
 , 							{
 								"box" : 								{
-									"addpoints" : [ 0.0, 0.0, 0, 12.411347517730698, 0.746666666666667, 0, 86.879432624113676, 0.373333333333333, 0, 140.070921985815801, 0.653333333333333, 0, 209.219858156028579, 0.013333333333333, 0 ],
+									"addpoints" : [ 0.0, 0.0, 0, 28.368794326241336, 1.0, 0, 113.475177304964745, 0.346666666666667, 0, 182.624113475177523, 0.0, 0 ],
 									"classic_curve" : 1,
 									"id" : "obj-6",
 									"maxclass" : "function",
@@ -5967,7 +6206,8 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "float", "", "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 265.666666666666629, 59.0, 200.0, 100.0 ]
+									"patching_rect" : [ 265.666666666666629, 59.0, 200.0, 100.0 ],
+									"varname" : "function[1]"
 								}
 
 							}
@@ -6109,6 +6349,30 @@
 								"patchline" : 								{
 									"destination" : [ "obj-11", 0 ],
 									"source" : [ "obj-8", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-23", 0 ],
+									"order" : 2,
+									"source" : [ "obj-9", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-44", 0 ],
+									"order" : 0,
+									"source" : [ "obj-9", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"order" : 1,
+									"source" : [ "obj-9", 0 ]
 								}
 
 							}
@@ -6274,6 +6538,20 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-26", 0 ],
 					"source" : [ "obj-11", 0 ]
 				}
@@ -6324,8 +6602,29 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-95", 0 ],
 					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-19", 0 ],
+					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-19", 0 ]
 				}
 
 			}
@@ -6342,6 +6641,21 @@
 					"destination" : [ "obj-55", 0 ],
 					"order" : 1,
 					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"midpoints" : [ 893.5, 213.0, 870.0, 213.0, 870.0, 120.0, 893.5, 120.0 ],
+					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-20", 0 ],
+					"source" : [ "obj-21", 0 ]
 				}
 
 			}
@@ -6466,6 +6780,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
 					"source" : [ "obj-95", 0 ]
 				}
@@ -6500,6 +6821,13 @@
 			}
 , 			{
 				"name" : "fm.maxpat",
+				"bootpath" : "~/Documents/Max 8/Patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "markov-fm.json",
 				"bootpath" : "~/Documents/Max 8/Patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",

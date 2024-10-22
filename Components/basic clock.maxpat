@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 119.0, 153.0, 202.0 ],
+		"rect" : [ 140.0, 198.0, 257.0, 160.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,56 +40,89 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-2",
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 106.0, 15.0, 59.0, 22.0 ],
+					"restore" : [ 0 ],
+					"saved_object_attributes" : 					{
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "pattr bpm",
+					"varname" : "bpm"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-18",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 37.0, 123.0, 45.0, 22.0 ],
-					"text" : "s clock"
+					"patching_rect" : [ 24.0, 82.0, 85.0, 22.0 ],
+					"text" : "s~ beatphasor"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-3",
-					"maxclass" : "toggle",
+					"id" : "obj-15",
+					"maxclass" : "number",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 37.0, 30.0, 24.0, 24.0 ]
+					"patching_rect" : [ 24.0, 19.0, 50.0, 22.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-1",
+					"id" : "obj-9",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 37.0, 72.0, 63.0, 22.0 ],
-					"text" : "metro 120"
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "signal" ],
+					"patching_rect" : [ 24.0, 49.0, 212.0, 22.0 ],
+					"text" : "gen~ @gen go.ramp.frombpm.gendsp"
 				}
 
 			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
+					"destination" : [ "obj-15", 0 ],
 					"source" : [ "obj-1", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"source" : [ "obj-3", 0 ]
+					"destination" : [ "obj-9", 0 ],
+					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"source" : [ "obj-9", 0 ]
 				}
 
 			}
  ],
-		"dependency_cache" : [  ],
+		"dependency_cache" : [ 			{
+				"name" : "go.ramp.frombpm.gendsp",
+				"bootpath" : "~/Documents/Max 8/Packages/GeneratingSoundAndOrganizingTime/patchers",
+				"patcherrelativepath" : "../../Packages/GeneratingSoundAndOrganizingTime/patchers",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+ ],
 		"autosave" : 0
 	}
 

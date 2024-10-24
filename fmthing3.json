@@ -5,9 +5,11 @@
 			"1" : 			{
 				"id" : 1,
 				"data" : 				{
-					"fmkick::1235transientvol" : [ 0 ],
-					"fmkick::1235tailpitch" : [ 0 ],
-					"maxindex" : [ 2.0 ]
+					"maxIndex" : [ "maxindex", 1.61 ],
+					"pitchMul" : [ "pitchMul", 1.97 ],
+					"miscMul" : [ "miscMul", 5.76 ],
+					"fmkick::1008transientvol" : [ 0 ],
+					"fmkick::1008tailpitch" : [ 0 ]
 				}
 
 			}
@@ -15,9 +17,11 @@
 			"2" : 			{
 				"id" : 2,
 				"data" : 				{
-					"fmkick::1235transientvol" : [ 0 ],
-					"fmkick::1235tailpitch" : [ 0 ],
-					"maxindex" : [ 8.0 ]
+					"maxIndex" : [ "maxindex", 4.0 ],
+					"pitchMul" : [ "pitchMul", 4.5 ],
+					"miscMul" : [ "miscMul", 10.199999999999999 ],
+					"fmkick::1008transientvol" : [ 0 ],
+					"fmkick::1008tailpitch" : [ 0 ]
 				}
 
 			}

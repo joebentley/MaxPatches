@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 176.0, 1368.0, 647.0 ],
+		"rect" : [ 34.0, 176.0, 971.0, 647.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,44 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-26",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 557.0, 414.0, 41.0, 22.0 ],
+					"text" : "zl.mth"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-24",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 557.0, 378.0, 67.0, 22.0 ],
+					"text" : "0. -15. -35."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "number",
+					"maximum" : 2,
+					"minimum" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 649.0, 378.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-6",
 					"maxclass" : "button",
 					"numinlets" : 1,
@@ -58,7 +96,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 83.0, 239.0, 80.0, 22.0 ],
-					"restore" : [ "miscMul", 5.76 ],
+					"restore" : [ "miscMul", 8.64156 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -77,7 +115,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 83.0, 215.0, 81.0, 22.0 ],
-					"restore" : [ "pitchMul", 1.97 ],
+					"restore" : [ "pitchMul", 3.61197 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -96,7 +134,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 83.0, 191.0, 88.0, 22.0 ],
-					"restore" : [ "maxindex", 1.59 ],
+					"restore" : [ "maxindex", 3.16111 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -890,7 +928,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 557.0, 461.0, 102.0, 22.0 ],
+					"patching_rect" : [ 557.0, 496.0, 102.0, 22.0 ],
 					"text" : "gen~ @title delay"
 				}
 
@@ -939,7 +977,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 627.0, 239.0, 65.0, 22.0 ],
-					"text" : "10. 0. 150."
+					"text" : "150. 10. 0."
 				}
 
 			}
@@ -1034,7 +1072,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 557.0, 391.0, 42.0, 22.0 ],
+					"patching_rect" : [ 557.0, 450.0, 42.0, 22.0 ],
 					"text" : "fmkick",
 					"varname" : "fmkick"
 				}
@@ -1046,7 +1084,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 557.0, 516.0, 50.0, 22.0 ],
+					"patching_rect" : [ 557.0, 551.0, 50.0, 22.0 ],
 					"text" : "s~ mix2"
 				}
 
@@ -1697,6 +1735,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-26", 1 ],
+					"midpoints" : [ 658.5, 411.0, 588.5, 411.0 ],
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-2", 1 ],
 					"order" : 2,
 					"source" : [ "obj-15", 0 ]
@@ -1794,8 +1840,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-26", 0 ],
+					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-20", 0 ],
 					"source" : [ "obj-25", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"source" : [ "obj-26", 0 ]
 				}
 
 			}
@@ -1815,7 +1875,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-11", 0 ],
+					"destination" : [ "obj-24", 0 ],
 					"source" : [ "obj-29", 0 ]
 				}
 
@@ -1884,6 +1944,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 1 ],
+					"midpoints" : [ 636.5, 444.0, 578.0, 444.0 ],
 					"source" : [ "obj-36", 0 ]
 				}
 
@@ -2042,27 +2103,27 @@
 		"dependency_cache" : [ 			{
 				"name" : "2opfm.gendsp",
 				"bootpath" : "~/Documents/Max 8/Library/Sources",
-				"patcherrelativepath" : "../Sources",
+				"patcherrelativepath" : "./Sources",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ValhallaVintageVerb.maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../Snapshots",
+				"patcherrelativepath" : "../Snapshots",
 				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fmkick.maxpat",
 				"bootpath" : "~/Documents/Max 8/Library/Sources",
-				"patcherrelativepath" : "../Sources",
+				"patcherrelativepath" : "./Sources",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fmthing3.json",
-				"bootpath" : "~/Documents/Max 8/Library/Components",
+				"bootpath" : "~/Documents/Max 8/Library",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -2070,35 +2131,35 @@
 , 			{
 				"name" : "go.latchsync.gendsp",
 				"bootpath" : "~/Documents/Max 8/Packages/GeneratingSoundAndOrganizingTime/patchers",
-				"patcherrelativepath" : "../../Packages/GeneratingSoundAndOrganizingTime/patchers",
+				"patcherrelativepath" : "../Packages/GeneratingSoundAndOrganizingTime/patchers",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "go.ramp.mul.gendsp",
 				"bootpath" : "~/Documents/Max 8/Packages/GeneratingSoundAndOrganizingTime/patchers",
-				"patcherrelativepath" : "../../Packages/GeneratingSoundAndOrganizingTime/patchers",
+				"patcherrelativepath" : "../Packages/GeneratingSoundAndOrganizingTime/patchers",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "go.ramp2slope.gendsp",
 				"bootpath" : "~/Documents/Max 8/Packages/GeneratingSoundAndOrganizingTime/patchers",
-				"patcherrelativepath" : "../../Packages/GeneratingSoundAndOrganizingTime/patchers",
+				"patcherrelativepath" : "../Packages/GeneratingSoundAndOrganizingTime/patchers",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "go.ramp2trig.gendsp",
 				"bootpath" : "~/Documents/Max 8/Packages/GeneratingSoundAndOrganizingTime/patchers",
-				"patcherrelativepath" : "../../Packages/GeneratingSoundAndOrganizingTime/patchers",
+				"patcherrelativepath" : "../Packages/GeneratingSoundAndOrganizingTime/patchers",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mixer.maxpat",
 				"bootpath" : "~/Documents/Max 8/Library/Components",
-				"patcherrelativepath" : ".",
+				"patcherrelativepath" : "./Components",
 				"type" : "JSON",
 				"implicit" : 1
 			}

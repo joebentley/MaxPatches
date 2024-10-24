@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 55.0, 552.0, 515.0, 286.0 ],
+		"rect" : [ 174.0, 568.0, 515.0, 286.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -753,35 +753,7 @@
 				}
 
 			}
- ],
-		"parameters" : 		{
-			"obj-10" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-12" : [ "live.gain~[1]", "live.gain~", 0 ],
-			"obj-13" : [ "live.gain~[2]", "live.gain~", 0 ],
-			"obj-14" : [ "live.gain~[3]", "live.gain~", 0 ],
-			"obj-16" : [ "vst~", "vst~", 0 ],
-			"obj-2" : [ "live.gain~[4]", "live.gain~[4]", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "ValhallaVintageVerb.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }

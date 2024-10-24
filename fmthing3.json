@@ -1,0 +1,29 @@
+{
+	"pattrstorage" : 	{
+		"name" : "fmthing3",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"fmkick::1235transientvol" : [ 0 ],
+					"fmkick::1235tailpitch" : [ 0 ],
+					"maxindex" : [ 2.0 ]
+				}
+
+			}
+,
+			"2" : 			{
+				"id" : 2,
+				"data" : 				{
+					"fmkick::1235transientvol" : [ 0 ],
+					"fmkick::1235tailpitch" : [ 0 ],
+					"maxindex" : [ 8.0 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}

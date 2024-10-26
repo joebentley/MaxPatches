@@ -373,7 +373,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 178.0, 203.0, 115.0, 22.0 ],
+					"patching_rect" : [ 179.0, 250.0, 115.0, 22.0 ],
 					"text" : "random @range 1 3"
 				}
 
@@ -716,7 +716,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
-					"midpoints" : [ 308.5, 164.0, 187.5, 164.0 ],
+					"midpoints" : [ 308.5, 167.0, 188.5, 167.0 ],
 					"order" : 3,
 					"source" : [ "obj-8", 0 ]
 				}

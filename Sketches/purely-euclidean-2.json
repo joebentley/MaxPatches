@@ -8,11 +8,11 @@
 					"Dhh" : [ "D", 16.0 ],
 					"Dkick" : [ "D", 8.0 ],
 					"Khh" : [ "K", 15.0 ],
-					"Kkick" : [ "K", 3.0 ],
+					"Kkick" : [ "K", 5.0 ],
 					"Nhh" : [ "N", 16.0 ],
 					"Nkick" : [ "N", 8.0 ],
 					"Shh" : [ "S", 11.0 ],
-					"Skick" : [ "S", 0.0 ],
+					"Skick" : [ "S", 3.0 ],
 					"gainhh" : [ "gain", 1.3 ],
 					"gainkick" : [ "gain", 1.0 ],
 					"kickpitchmax" : [ "pitchmax", 700.0 ]

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 119.0, 703.0, 567.0 ],
+		"rect" : [ 59.0, 119.0, 687.0, 591.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,40 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"activebgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"activelinecolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"id" : "obj-23",
+					"maxclass" : "live.scope~",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 412.0, 514.0, 184.0, 68.0 ],
+					"prototypename" : "black-scope-ramp",
+					"range" : [ -0.1, 1.1 ],
+					"rounded" : 0.0,
+					"samples" : 100000.0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"activebgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"activelinecolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"id" : "obj-9",
+					"maxclass" : "live.scope~",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 8.5, 514.0, 184.0, 68.0 ],
+					"prototypename" : "black-scope-ramp",
+					"range" : [ -0.1, 1.1 ],
+					"rounded" : 0.0,
+					"samples" : 100000.0
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-35",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -56,7 +90,7 @@
 						}
 ,
 						"classnamespace" : "dsp.gen",
-						"rect" : [ 852.0, 396.0, 600.0, 450.0 ],
+						"rect" : [ 836.0, 396.0, 600.0, 450.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -452,7 +486,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "signal", "signal", "signal", "signal" ],
 					"patching_rect" : [ 246.0, 416.0, 81.0, 22.0 ],
-					"text" : "svf~ 1000 0.1"
+					"text" : "svf~ 1300 0.1"
 				}
 
 			}
@@ -476,7 +510,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 313.0, 359.0, 127.0, 22.0 ],
-					"text" : "scale~ 0 1 0.02 0.06 4"
+					"text" : "scale~ 0 1 0.05 0.16 2"
 				}
 
 			}
@@ -489,7 +523,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 399.0, 498.0, 184.0, 68.0 ],
+					"patching_rect" : [ 412.0, 439.0, 184.0, 68.0 ],
 					"prototypename" : "black-scope-ramp",
 					"range" : [ -0.1, 1.1 ],
 					"rounded" : 0.0,
@@ -619,8 +653,8 @@
 					"id" : "obj-17",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "signal" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
@@ -661,6 +695,17 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-6",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 156.0, 243.0, 35.0, 22.0 ],
+									"text" : "out 2"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-5",
 									"maxclass" : "newobj",
@@ -715,8 +760,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 26.0, 123.0, 71.0, 22.0 ],
-									"text" : "go.unit.arc2"
+									"patching_rect" : [ 26.0, 123.0, 65.0, 22.0 ],
+									"text" : "go.unit.arc"
 								}
 
 							}
@@ -802,6 +847,15 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-3", 0 ],
+									"order" : 1,
+									"source" : [ "obj-9", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"order" : 0,
 									"source" : [ "obj-9", 0 ]
 								}
 
@@ -842,8 +896,8 @@
 					"id" : "obj-30",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "signal" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
@@ -884,6 +938,17 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-13",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 318.0, 400.0, 35.0, 22.0 ],
+									"text" : "out 2"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-12",
 									"maxclass" : "newobj",
@@ -1047,7 +1112,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 191.0, 266.0, 19.0, 22.0 ],
-									"text" : "8"
+									"text" : "3"
 								}
 
 							}
@@ -1142,8 +1207,8 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 439.0, 105.0, 25.0, 22.0 ],
-									"text" : "0.1"
+									"patching_rect" : [ 439.0, 105.0, 32.0, 22.0 ],
+									"text" : "0.05"
 								}
 
 							}
@@ -1423,8 +1488,17 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-13", 0 ],
+									"order" : 0,
+									"source" : [ "obj-9", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-14", 1 ],
 									"midpoints" : [ 396.5, 317.0, 268.0, 317.0 ],
+									"order" : 1,
 									"source" : [ "obj-9", 0 ]
 								}
 
@@ -1592,16 +1666,16 @@
 					"patching_rect" : [ 9.0, 13.0, 56.0, 22.0 ],
 					"restore" : 					{
 						"Dhh" : [ "D", 16.0 ],
-						"Dkick" : [ "D", 8.0 ],
-						"Khh" : [ "K", 15.0 ],
-						"Kkick" : [ "K", 3.0 ],
-						"Nhh" : [ "N", 16.0 ],
-						"Nkick" : [ "N", 8.0 ],
-						"Shh" : [ "S", 11.0 ],
-						"Skick" : [ "S", 0.0 ],
-						"gainhh" : [ "gain", 1.85 ],
-						"gainkick" : [ "gain", 1.9 ],
-						"kickpitchmax" : [ "pitchmax", 700.0 ]
+						"Dkick" : [ "D", 16.0 ],
+						"Khh" : [ "K", 6.0 ],
+						"Kkick" : [ "K", 4.0 ],
+						"Nhh" : [ "N", 15.0 ],
+						"Nkick" : [ "N", 16.0 ],
+						"Shh" : [ "S", 1.0 ],
+						"Skick" : [ "S", 3.0 ],
+						"gainhh" : [ "gain", 2.0 ],
+						"gainkick" : [ "gain", 2.100000000000001 ],
+						"kickpitchmax" : [ "pitchmax", 396.0 ]
 					}
 ,
 					"text" : "autopattr",
@@ -1771,6 +1845,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-23", 0 ],
+					"source" : [ "obj-17", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-45", 0 ],
 					"source" : [ "obj-17", 0 ]
 				}
@@ -1869,6 +1950,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
 					"source" : [ "obj-30", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"source" : [ "obj-30", 1 ]
 				}
 
 			}
@@ -2051,6 +2139,13 @@
 			}
 , 			{
 				"name" : "go.ramp2trig.gendsp",
+				"bootpath" : "~/Documents/Max 8/Packages/GeneratingSoundAndOrganizingTime/patchers",
+				"patcherrelativepath" : "../../Packages/GeneratingSoundAndOrganizingTime/patchers",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "go.unit.arc.gendsp",
 				"bootpath" : "~/Documents/Max 8/Packages/GeneratingSoundAndOrganizingTime/patchers",
 				"patcherrelativepath" : "../../Packages/GeneratingSoundAndOrganizingTime/patchers",
 				"type" : "gDSP",

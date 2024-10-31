@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 844.0, 204.0, 575.0, 275.0 ],
+		"rect" : [ 453.0, 275.0, 575.0, 275.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -35,7 +35,7 @@
 		"description" : "",
 		"digest" : "",
 		"tags" : "",
-		"style" : "",
+		"style" : "bnw",
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
@@ -1875,39 +1875,34 @@
 
 			}
  ],
-		"parameters" : 		{
-			"obj-10" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-12" : [ "live.gain~[1]", "live.gain~", 0 ],
-			"obj-13" : [ "live.gain~[2]", "live.gain~", 0 ],
-			"obj-14" : [ "live.gain~[3]", "live.gain~", 0 ],
-			"obj-16" : [ "vst~", "vst~", 0 ],
-			"obj-2" : [ "live.gain~[4]", "live.gain~[4]", 0 ],
-			"obj-62" : [ "live.gain~[6]", "live.gain~", 0 ],
-			"obj-73" : [ "live.dial", "live.dial", 0 ],
-			"obj-78" : [ "live.dial[1]", "live.dial", 0 ],
-			"obj-79" : [ "live.dial[2]", "live.dial", 0 ],
-			"obj-80" : [ "live.dial[3]", "live.dial", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+		"styles" : [ 			{
+				"name" : "bnw",
+				"default" : 				{
+					"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"bgfillcolor" : 					{
+						"angle" : 270.0,
+						"autogradient" : 0.0,
+						"color" : [ 1.0, 1.0, 1.0, 1.0 ],
+						"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
+						"color2" : [ 1.0, 1.0, 1.0, 1.0 ],
+						"proportion" : 0.5,
+						"type" : "gradient"
+					}
+,
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"editing_bgcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ],
+					"locked_bgcolor" : [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ],
+					"patchlinecolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"selectioncolor" : [ 0.76078431372549, 0.76078431372549, 0.76078431372549, 1.0 ],
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
-
-			}
 ,
-			"inherited_shortname" : 1
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "ValhallaVintageVerb.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
+				"parentstyle" : "",
+				"multi" : 0
 			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }

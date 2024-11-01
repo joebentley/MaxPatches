@@ -1,0 +1,47 @@
+{
+	"pattrstorage" : 	{
+		"name" : "2opfm",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"name" : "Bass",
+				"data" : 				{
+					"Harmonic" : [ 1.0 ],
+					"attack" : [ 3.33 ],
+					"attackIndex" : [ 0.0 ],
+					"decay" : [ 167.0 ],
+					"decayIndex" : [ 921.0 ],
+					"maxIndex" : [ 1.0 ],
+					"minIndex" : [ 0.0 ],
+					"release" : [ 200.0 ],
+					"releaseIndex" : [ 100.0 ],
+					"sustain" : [ 0.2 ],
+					"sustainIndex" : [ 0.0 ]
+				}
+
+			}
+,
+			"2" : 			{
+				"id" : 2,
+				"name" : "Twang",
+				"data" : 				{
+					"Harmonic" : [ 5.0 ],
+					"attack" : [ 3.33 ],
+					"attackIndex" : [ 0.0 ],
+					"decay" : [ 109.0 ],
+					"decayIndex" : [ 150.0 ],
+					"maxIndex" : [ 4.8 ],
+					"minIndex" : [ 0.0 ],
+					"release" : [ 111.0 ],
+					"releaseIndex" : [ 300.0 ],
+					"sustain" : [ 0.3 ],
+					"sustainIndex" : [ 0.29 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
